@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+
+/* content */
+.contain{
+    width: 1230px;
+    height: 593.6px;
+    /* background: yellowgreen; */
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+.reg-box{
+    width: 400px;
+    height: 593px;
+    background: white;
+    margin: 0 auto;
+}
+.reg-tit{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    /* background: pink; */
+}
+.reg-tit .zhuc{
+    color: #010101;
+    font-size: 18px;
+    font-family: "Source Han Sans CN", Verdana, Arial;
+}
+.right-tit{
+    top: 0;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+}
+.right-tit a{
+    color: #2369aa;
+    font-size: 14px;
+}
+.right-tit a:hover{
+    border-bottom: 1px solid #2369aa;
+}
+
+.from-group-ul .list{
+    width: 400px;
+    height: 80px;
+    /* background: yellow; */
+    margin:25px 0;
+}
+.list .from-div-list{
+    width: 398px;
+    height: 56px;
+    /* background: #2369aa; */
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.from-div-list .label-text{
+    margin:0 30px 0 5px;
+}
+.from-div-list .input-text{
+    border: 0;
+}
+.list .info{
+    font-size: 14px;
+    color:#ff3736;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+}
+
+.list .list-yzm{
+    width: 95px;
+    height: 55px;
+    background: gray;
+    margin-left: 50px;
+}
+
+
+.label-txt {
+    font-size: 12px;
+    color: #5e5e5e;
+}
+.check-p .check-p-btn{
+    width: 400px;
+    height: 47px;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    background: #ff3736;
+    text-align: center;
+    line-height: 47px;
+    margin-top: 20px;
+
+}

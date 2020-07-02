@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/logincom.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="icon_login/iconfont.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/captcha.js"></script>
+    <script src="js/md5.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/Cookie.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="header-box">
+        <div class="logo-box">
+            <a href="index.html"><img src="img/logo1.png" alt=""></a>
+        </div>
+        <div class="bg"></div>
+    </header>
+
+
+    <!-- login -->
+    <section class="login-main">
+        <div class="login-box">
+            <h4 class="login-txt">
+                <span class="name">账户登陆</span>
+                <a class="login-a" href="zhuce.html">手机快速注册></a>
+            </h4>
+
+            <div class="login-from">
+                <div class="from-list">
+                    <i class="iconfont icon-geren"></i>
+                    <input id="phone-ID" class="input-text" placeholder="手机号/邮箱/账户名"  type="text">
+                </div>
+
+                <div class="from-list">
+                    <i class="iconfont icon-mima"></i>
+                    <input id="password-ID" class="input-text" placeholder="密码"  type="text">
+                </div>
+                <!-- <div class="from-list">
+                    <input class="input-yzm" type="text" placeholder="请输入验证码">
+                    <i class="img-yzm">
+                        <canvas width="95" height="45" id="captcha"></canvas>
+                    </i>
+                </div> -->
+            </div>
+
+            <div class="dlu-box">
+                <p class="login-tool">
+                    <label class="label-check">
+                        <input type="checkbox"> 自动登陆
+                    </label>
+                    <a class="check-a" href="">忘记密码</a>
+                </p>
+                <a class="check-btn" id="loginBtn">登 录</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-box">
+        <div class="container">
+            <p>罗技官方商城由罗技（中国）科技有限公司授权双齐国际贸易（上海）有限公司负责经营 2016 , all rights reserved</p>
+            <p>
+                <a href="https://www.logitech.com.cn/zh-cn" target="_blank">罗技官方网站</a>
+                <a href="/help/Contact" target="_blank">联系方式</a>
+                <a href="/help/Privacy" target="_blank">隐私声明</a>
+                <a href="/help/Agreement" target="_blank">用户服务协议</a>
+                <a href="https://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">沪ICP备10200262号</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

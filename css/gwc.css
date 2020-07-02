@@ -1,0 +1,221 @@
+@charset "utf-8";
+.cart-content{
+    width: 1200px;
+    min-height: 400px;
+    /* background: pink; */
+    margin: 0 auto;
+    border-bottom: 1px solid #f4f4f4;
+}
+.cart-content .cart-header{
+    width: 1200px;
+    height: 48px;
+    /* background: powderblue; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-header a{
+    display: block;
+    width: 180px;
+    height: 24px;
+    /* background: purple; */
+}
+.cart-header a img{
+    width: 100%;
+    height: 100%;
+}
+.cart-header .step-box{
+    /* display: inline; */  
+    width: 794px;
+    height: 35px;
+    background: url(../img/cart-step-01.png) no-repeat;
+}
+.cart-content .cart-con-box{
+    width: 1200px;
+    /* height: 200px; */
+    /* background: yellow; */
+}
+.cart-con-box .cart-title{
+    width: 42px;
+    height: 16px;
+    font-size: 14px;
+    /* background: seagreen; */
+}
+.cart-con-box .cart-table-box{
+    width: 1200px;
+    /* height: 163px; */
+    /* background: skyblue; */
+    margin-top: 10px;
+}
+.cart-con-box  .table-s{
+    width: 1198px;
+    height: 40px;
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+}
+.table-s .table-s-l{
+    width: 609px;
+    height: 25px;
+    /* background: aquamarine; */
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.table-s .table-s-l .table-checkbox{
+    width: 18px;
+    height: 16px;
+    border: #ff3c3c;
+    margin-right: 20px;
+}
+.table-s-l em{
+    font-size: 14px;
+}
+.table-s .table-s-r{
+    width: 140px;
+    height: 25px;
+    /* background: olivedrab; */
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    border-left: 1px solid #e9e9e9;
+}
+.cart-table-box .table-x{
+    width: 1200px;
+    min-height: 120px;
+    /* background: silver; */
+    display: flex;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+}
+.table-x .table-x-int{
+    width: 32px;
+    height: 120px;
+    /* background: skyblue; */
+    line-height: 120px;
+    text-align: center;
+    padding-left: 15px;
+}
+.table-x .table-x-int .table-checkbox2{
+    width: 18px;
+    height: 16px;
+    border: #ff3c3c;
+    margin-right: 20px;
+}
+.table-x .table-x-img{
+    width: 300px;
+    height: 80px;
+    /* background: tomato; */
+    display: flex;
+    /* align-items: center; */
+}
+.table-x .table-x-img a{
+    display: block;
+    width: 78px;
+    height: 78px;
+    border: 1px solid #f1f0f0;
+}
+.table-x .table-x-img a img{
+    width: 100%;
+    height: 100%;
+}
+.table-x-img p{
+    width: 180px;
+    height: 80px;
+    /* background: peru; */
+    font-size: 12px;
+    color: #5b5b5b;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.table-x .table-price-box{
+    width: 560px;
+    height: 50px;
+    /* background: palegreen; */
+    margin-left: 280px;
+    display: flex;
+    
+}
+.table-price-box li{
+    width: 138px;
+    height: 50px;
+    /* background: royalblue; */
+    /* border-right: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-price-box li i{
+    font-size: 14px;
+    color: #5b5b55;
+}
+.table-price-box .price-btn input{
+    width: 40px;
+    height: 28px;
+    border: 1px solid #c8c7cc;
+    text-align: center;
+    line-height: 28px;
+}
+.table-price-box .price-btn{
+    display: flex;
+}
+.table-price-box .price-btn a{
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #c8c7cc;
+    line-height: 28px;
+    text-align: center;
+}
+.table-price-box .price-total{
+    color: #ff3c3c;
+    font-size: 14px;
+    font-weight: bold;
+}
+.table-price-box .price-delete .delete-btn{
+    font-size: 12px;
+    color: #428bca;
+}
+.price-delete .delete-btn:hover{
+    border-bottom: 1px solid #428bca;
+    opacity: 0.6;
+}
+
+.cart-content .check-all-box{
+    width: 300px;
+    height: 70px;
+    /* background: orchid; */
+    margin-top: 10px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.check-all-box .empty-box{
+    /* background: skyblue; */
+    font-size: 14px;
+    color: #5b5b5b;
+    /* line-height: 50px; */
+}
+.check-all-box .empty-box:hover{
+    border-bottom: 1px solid #5b5b5b;
+}
+.check-all-box .count-box{
+    display: block;
+    width: 164px;
+    height: 44px;
+    background: #ff3c3c;
+    color: #fff;
+    font-size: 22px;
+    font-family: "SimSun", Verdana, Arial;
+    line-height: 44px;
+    text-align: center;
+}
+.check-all-box .count-box:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/move.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="icon_index/iconfont.css">
+</head>
+
+<body>
+    <!-- 右侧固定栏 -->
+    <div id="fixed-bar">
+        <ul class="bar-box">
+            <li class="box-item1">
+                <i class="iconfont icon-zixun1 "></i>
+                <p class="item-txt">售前咨询</p>
+
+                <div class="detail-l" >
+                    <div class="detail-con">
+                        <div class="con-s">
+                            <i class="iconfont icon-zixun1 ">在线咨询</i>
+                        </div>
+                        <p class="time">周一至周日: 9:00-18:00</p>
+                    </div>
+
+                    <div class="detail-x">
+                        <p class="hotline">热线电话</p>
+                        <p class="phone">400-6260-228</p>
+                        <p class="time">周一至周六: 9:00-18:00</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="box-item1">
+                <i class="iconfont icon-zixun2 "></i>
+                <p class="item-txt">售后咨询</p>
+
+                <div class="detail-l detail-2" >
+                    <div class="detail-con">
+                        <div class="con-s">
+                            <p class="text1">本商城购买</p>
+                            <p class="text2">400-6260-228</p>
+                        </div>
+
+                        <div class="con-s">
+                            <p class="text1">非本商城购买</p>
+                            <p class="text2">400-8200-338</p>
+                        </div>
+
+                        <a class="after-sales" href="https://store.logitech.com.cn/help/LgBranches" target="_blank">点击查看售后网点&gt;&gt;</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="box-item1 item-3" >
+                <i><img src="img/weixin1.png" alt=""></i>
+                <p class="item-txt">官方微信</p>
+
+                <div class="detail-l detail detail-3" >
+                    <div class="detail-con detail-txt">
+                       <img src="img/logweixin.png" alt="">
+                       <p class="mall">官方微信</p>
+                    </div>
+                   
+                </div>
+            </li>
+
+            <li class="box-item1 item-btn" onclick="goBack()">
+                <i class="iconfont icon-backtop "></i>
+                <p class="item-txt">TOP</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- index header -->
+    <header class="header-box">
+        <aside class="top-box">
+            <div class="welcome-box">
+                <div class="welcome-div">
+                    <span> 您好,欢迎来到罗技官方商城&nbsp;&nbsp;&nbsp;</span>
+                    <a href="">请登录</a>
+                    <i>&nbsp; |  &nbsp;</i>
+                    <a href="">注册</a>
+                </div>
+               
+                <div class="right-box">
+                       <a  href="">
+                           <i class="iconfont icon-sum"></i>我的账户
+                       </a> 
+                       <p>|</p>
+                       <a href="">
+                           <i class="iconfont icon-gouwucheman1"></i> 购物车
+                       </a>
+
+                       <div class="phone">
+                            <span class="iconfont icon-dianhua1"></span>4006260228
+                       </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="header-wrap">
+            <a class="logo" href=""></a>
+            <a class="banggon" href=""><img src="img/new.gif" alt=""></a>
+            <div class="header-search">
+                <div class="search-box">
+                    <input placeholder="GPW限量粉" type="text" id="txtKeyName" autocomplete="off" >  
+                    <div class="search-right">
+                        <a class="iconfont icon-sousuo1" href=""></a>
+                    </div>
+                   
+                </div>
+                <p class="meat">
+                    热门搜索：
+                    <a href="/Product/Detail?id=5703" target="_blank">G502无线游戏鼠标</a>
+                    <a href="/Product/Detail?id=4307" target="_blank">G633游戏耳机</a>
+                    <a href="/Product/Detail?id=1642" target="_blank">Pro C920摄像头</a>
+                </p>
+
+            </div>
+
+            <a class="xinren" href=""><img src="img/shiping.gif" alt=""></a>
+        </div>
+    </header>
+
+    <!-- nav -->
+    <nav class="nav-box">
+        <div class="nav-wrap">
+            <ul class="nav-txt">
+                <li class="classify">
+                    <a class="ify-a" href="">全部产品分类</a>
+                    <div class="classify-nav "  >
+                        <dl>
+                            <dt>
+                                <a href="">
+                                    <i class="iconfont icon-erji2"></i> 音乐类
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href="/Product/Index/26" target="_blank">蓝牙音箱</a>
+                                <a href="/Product/Index/25" target="_blank">入耳式耳机</a>
+                            </dd>
+
+                            <dt>
+                                <a href="">
+                                    <i class="iconfont icon-pad"></i> 平板电脑周边
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href="/Product/Index/26" target="_blank">平板电脑周边</a>
+                            </dd>
+
+                            <dt>
+                                <a href="">
+                                    <i class="iconfont icon-youxi"></i> 游戏类
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href="/Product/Index/26" target="_blank">游戏鼠标</a>
+                                <a href="/Product/Index/25" target="_blank">游戏鼠标垫</a>
+                                <a href="/Product/Index/26" target="_blank">游戏耳机麦克风</a>
+                                <a href="/Product/Index/25" target="_blank">方向盘</a>
+                                <a href="/Product/Index/26" target="_blank">罗技G飞行模拟器</a>
+                                <a href="/Product/Index/25" target="_blank">游戏键盘</a>
+                            </dd>
+
+                            <dt>
+                                <a href="">
+                                    <i class="iconfont icon-icon-test"></i> 个人电脑周边
+                                </a>
+                            </dt>
+                            <dd class="clear_border">
+                                <a href="/Product/Index/26" target="_blank">电脑耳机麦克风</a>
+                                <a href="/Product/Index/25" target="_blank">有线键盘</a>
+                                <a href="/Product/Index/26" target="_blank">摄像头</a>
+                                <a href="/Product/Index/25" target="_blank">无线鼠标套装</a>
+                                <a href="/Product/Index/26" target="_blank">演示器</a>
+                                <a href="/Product/Index/25" target="_blank">有线键鼠套装</a>
+                                <a href="/Product/Index/26" target="_blank">蓝牙鼠标垫</a>
+                                <a href="/Product/Index/25" target="_blank">激光鼠标</a>
+                                <a href="/Product/Index/26" target="_blank">无线鼠标</a>
+                                <a href="/Product/Index/25" target="_blank">有线键鼠套装</a>
+                                <a href="/Product/Index/26" target="_blank">有线鼠标</a>
+                                <a href="/Product/Index/25" target="_blank">无线键盘</a>
+                            </dd>
+
+                        </dl>
+                    </div>
+                </li>
+
+                <li class="nav-li">
+                    <a class="first-a" href="">配件专区</a>
+                </li>
+                <li class="nav-li">
+                    <a class="first-a" href="">新品专区</a>
+                </li>
+                <li class="nav-li">
+                    <a class="first-a" href="">会议专区</a>
+                    <em class="hot-bg"></em>
+                </li>
+                <li class="nav-li">
+                    <a class="first-a" href="">礼品采购</a>
+                    <em class="hot-bg"></em>
+                </li>
+                <li class="nav-li">
+                    <a class="first-a" href="">会员福利</a>
+                </li>
+                <li class="nav-li">
+                    <a class="first-a" href="">关于罗技</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- cont -->
+    <section>
+        <aside class="crumb-box">
+            <div class="content-wrap">
+                您现在的位置是：
+                <a href="">罗技官方商城</a>
+                &nbsp;>&nbsp;
+                <a href="">所有产品</a>
+                &nbsp;>&nbsp;
+                <a href="">配件</a>
+            </div>
+        </aside>
+
+        <div class="container">
+            <div class="contlist-box">
+                <div class="contlist-left">
+                    <h3 class="list-tit">
+                        <a class="tit-a" href="">热销排行</a>
+                    </h3>
+
+                    <div class="divTJ">
+                        <ul class="left-list-ul">
+                            <li class="list last">
+                                <p class="p-img">
+                                    <a href="/pro/proDetail/5160"><img src="https://images.wincheers.net/UpLoad/logitech/xx/C1000e01.png" alt="罗技 C1000e 4K网络摄像头"></a>
+                                </p>
+                                <p class="p-name">
+                                    <a class="name-a" href="/pro/proDetail/5160">罗技 C1000e 4K网络摄像头</a>
+                                    <span class="price">￥1,999</span>
+                                </p>
+                                <p class="p-tool" id="6248">
+                                    <a class="p-add-cart-btn" >加入购物车</a> 
+                                </p>
+                            </li>
+                            
+                        </ul>
+                        <ul class="left-list-ul">
+                            <li class="list last">
+                                <p class="p-img">
+                                    <a href="/pro/proDetail/5160"><img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2020-06-15/NEW_XM/g102二代黑.png" alt="罗技 C1000e 4K网络摄像头"></a>
+                                </p>
+                                <p class="p-name">
+                                    <a class="name-a" href="/pro/proDetail/5160">罗技 G102二代 LIGHTSYNC游戏鼠标 </a>
+                                    <span class="price">￥149</span>
+                                </p>
+                                <p class="p-tool" id="6248">
+                                    <a class="p-add-cart-btn" >加入购物车</a> 
+                                </p>
+                            </li>
+                            
+                        </ul>
+                        <ul class="left-list-ul">
+                            <li class="list last">
+                                <p class="p-img">
+                                    <a href="/pro/proDetail/5160"><img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2020-06-19/NEW_XM/STREAMCAM-黑.png" alt="罗技 C1000e 4K网络摄像头"></a>
+                                </p>
+                                <p class="p-name">
+                                    <a class="name-a" href="/pro/proDetail/5160">罗技 STREAMCAM全高清流媒体游戏直播摄像头</a>
+                                    <span class="price">￥1,199</span>
+                                </p>
+                                <p class="p-tool" id="6248">
+                                    <a class="p-add-cart-btn" >加入购物车</a> 
+                                </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contlist-right">
+                    <div class="search-box">
+                        <div class="search-title">
+                            <span class="span-text">
+                                <a href="">全部分类</a>
+                                &nbsp;&gt;&nbsp;
+                                <a href="" id="Searchkey">热销单品</a>
+                                &nbsp;&gt;&nbsp;
+                            </span>
+                        </div>
+
+                        <ul class="search-ul">
+                            <li class="list-last">
+                                <i class="list-txt">价 &nbsp; 格 :</i>
+                            </li>
+                            <li class="list-li">
+                                <a class="li-color" href="">全部</a>
+                                <a href="">0-99</a>
+                                <a href="">100-299</a>
+                                <a href="">300-399</a>
+                                <a href="">400-799</a>
+                                <a href="">800以上</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sort-box">
+                        <div class="sort-left">
+                            <a class="sort-a">默认</a>
+                            <a class="sort-a" >销量<i class="iconfont icon-shangxia"></i></a>
+                            <a class="sort-a" >价格<i class="iconfont icon-shangxia"></i></a>
+                            <span class="have-goods">
+                                <label for="">
+                                    <input type="checkbox" id=""> 不显示售完商品
+                                </label>
+                            </span>
+                        </div>
+
+                        <div class="sort-right">
+                            <span class="number">共显示<em id="ProdcutNumberShow">37</em>件商品</span>
+                       </div>
+                    </div>
+
+                    <div id="divpage">
+                        <ul class="page-box">
+                            <!-- <li class="page-list">
+                                 <p class="list-img">
+                                    <a href="" target="_blank">
+                                        <img src="https://images.wincheers.net/UpLoad/logitech/xx/G560-01.png" alt="罗技 G560 Lightsync PC游戏音箱">
+                                    </a>
+                                </p>
+                                <p class="list-name">
+                                    <a href="" title="罗技 G560 Lightsync PC游戏音箱">罗技 G560 Lightsync PC游戏音箱</a>
+                                </p>
+                                <p class="list-price">
+                                    <span class="jiage">
+                                        商城价
+                                            <strong>
+                                                <em>￥</em>1,699
+                                            </strong>
+                                    </span>
+                                    <span class="comment">1 评价</span>
+                                </p>
+                                <p class="list-tool clear_border">
+                                    <a class="tool-a" >加入购物车</a>
+                                </p> 
+                            </li> -->
+                        </ul>
+                    </div>
+               
+
+                
+                    <div class="page-btn">
+                        <ul class="page-btn-box">
+                            <li class="disabled">
+                                <a href="">第一页</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="">上一页</a>
+                            </li>
+                            <li class="active active-2">
+                                <a href="">1</a>
+                            </li>
+                            <li class="active">
+                                <a href="">2</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="">第一页</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="">上一页</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- index footer  -->
+    <footer class="footer-box">
+        <div class="footer-wrap">
+            <div class="footer-s">
+                <span>
+                    <i class="iconfont icon-serviceshandiantuikuan"></i>
+                    快速送货 产品直达
+                </span>
+                <span>
+                    <i class="iconfont icon-gift"></i>
+                    独家优惠 丰富活动
+                </span>
+                <span>
+                    <i class="iconfont icon-zhengpinbz"></i>
+                    官方网购 正品保证
+                </span>
+                <span>
+                    <i class="iconfont icon-meiyuandollars36"></i>
+                    多种类型 方便支付
+                </span>
+                <span>
+                    <i class="iconfont icon-wechat"></i>
+                    所有产品 均有售后
+                </span>
+            </div>
+
+            <div class="cont-box">
+                <dl class="help-dl">
+                    <dt>| &nbsp;新手指南</dt>
+                    <dd><a href="/help/Registered" target="_blank">如何注册</a></dd>
+                    <dd><a href="/help/BuyProcess" target="_blank">购买流程</a></dd>
+                    <dd><a href="/help/Point" target="_blank">积分政策</a></dd>
+                </dl>
+                <dl class="help-dl">
+                    <dt>| &nbsp;支付方式</dt>
+                    <dd><a href="/help/Registered" target="_blank">银行汇款</a></dd>
+                    <dd><a href="/help/BuyProcess" target="_blank">发票问题</a></dd>
+                    <dd><a href="/help/Point" target="_blank">在线支付</a></dd>
+                </dl>
+                <dl class="help-dl">
+                    <dt>| &nbsp;配送方式</dt>
+                    <dd><a href="/help/Registered" target="_blank">配送范围及运费</a></dd>
+                    <dd><a href="/help/BuyProcess" target="_blank">圆通配送</a></dd>
+                </dl>
+                <dl class="help-dl">
+                    <dt>| &nbsp;售后服务</dt>
+                    <dd><a href="/help/Registered" target="_blank">罗技售后网点</a></dd>
+                    <dd><a href="/help/BuyProcess" target="_blank">售后服务承诺</a></dd>
+                    <dd><a href="/help/Point" target="_blank">退款说明</a></dd>
+                </dl>
+                <dl class="help-dl">
+                    <dt>| &nbsp;罗技官方网站</dt>
+                    <dd><a href="/help/Registered" target="_blank">常见问题</a></dd>
+                    <dd><a href="/help/BuyProcess" target="_blank">技术支持</a></dd>
+                    <dd><a href="/help/Point" target="_blank">交易条款</a></dd>
+                </dl>
+
+                <div class="help-right">
+                    <a href="">
+                        <p class="p1">在线客服</p>
+                    </a>
+                    <p class="p1">4006260228</p>    
+                    <p class="p2">周一至周五: 9:00-18:00</p>
+                </div>
+            </div>
+
+            <div class="footer-x">
+                <div class="container footer">
+                    <p>罗技官方商城由罗技（中国）科技有限公司授权双齐国际贸易（上海）有限公司负责经营 2016 , all rights reserved</p>
+                    <p>
+                        <a href="https://www.logitech.com.cn/zh-cn" target="_blank">罗技官方网站</a>
+                        <a href="/help/Contact" target="_blank">联系方式</a>
+                        <a href="/help/Privacy" target="_blank">隐私声明</a>
+                        <a href="/help/Agreement" target="_blank">用户服务协议</a>
+                        <a href="https://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">沪ICP备10200262号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
+<script>
+    window.onload = function(){
+        let oUl = document.querySelector(".page-box")
+        $.getJSON("server/data.json",(data) => {
+            let html = data.map(item => {
+                return `
+            <li class="page-list">
+                <p class="list-img">
+                    <a href="" target="_blank">
+                        <img src=${item.src} alt="罗技 G560 Lightsync PC游戏音箱">
+                    </a>
+                </p>
+                <p class="list-name">
+                    <a href="" title="罗技 G560 Lightsync PC游戏音箱">${item.title}</a>
+                </p>
+                <p class="list-price">
+                    <span class="jiage">
+                        
+                            <strong>
+                                <em>${item.price}</em>
+                            </strong>
+                    </span>
+                    <span class="comment">${item.comment}</span>
+                </p>
+                <p class="list-tool clear_border">
+                    <a class="tool-a" >加入购物车</a>
+                </p>
+            </li>    
+            
+                `
+            }).join("")
+            oUl.innerHTML = html
+        })
+    }   
+</script>

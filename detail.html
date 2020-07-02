@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/boost.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="icon_index/iconfont.css">
+</head>
+<body>
+     <!-- 右侧固定栏 -->
+     <div id="fixed-bar">
+        <ul class="bar-box">
+            <li class="box-item1">
+                <i class="iconfont icon-zixun1 "></i>
+                <p class="item-txt">售前咨询</p>
+
+                <div class="detail-l">
+                    <div class="detail-con">
+                        <div class="con-s">
+                            <i class="iconfont icon-zixun1 ">在线咨询</i>
+                        </div>
+                        <p class="time">周一至周日: 9:00-18:00</p>
+                    </div>
+
+                    <div class="detail-x">
+                        <p class="hotline">热线电话</p>
+                        <p class="phone">400-6260-228</p>
+                        <p class="time">周一至周六: 9:00-18:00</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="box-item1">
+                <i class="iconfont icon-zixun2 "></i>
+                <p class="item-txt">售后咨询</p>
+
+                <div class="detail-l detail-2">
+                    <div class="detail-con">
+                        <div class="con-s">
+                            <p class="text1">本商城购买</p>
+                            <p class="text2">400-6260-228</p>
+                        </div>
+
+                        <div class="con-s">
+                            <p class="text1">非本商城购买</p>
+                            <p class="text2">400-8200-338</p>
+                        </div>
+
+                        <a class="after-sales" href="https://store.logitech.com.cn/help/LgBranches" target="_blank">点击查看售后网点&gt;&gt;</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="box-item1 item-3" >
+                <i><img src="img/weixin1.png" alt=""></i>
+                <p class="item-txt">官方微信</p>
+
+                <div class="detail-l detail detail-3">
+                    <div class="detail-con detail-txt">
+                       <img src="img/logweixin.png" alt="">
+                       <p class="mall">官方微信</p>
+                    </div>
+                   
+                </div>
+            </li>
+
+            <li class="box-item1 item-btn " onclick="goBack()">
+                <i class="iconfont icon-backtop "></i>
+                <p class="item-txt">TOP</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- index header -->
+    <header class="header-box">
+        <aside class="top-box">
+            <div class="welcome-box">
+                <div class="welcome-div">
+                    <span> 您好,欢迎来到罗技官方商城&nbsp;&nbsp;&nbsp;</span>
+                    <a href="">请登录</a>
+                    <i>&nbsp; |  &nbsp;</i>
+                    <a href="">注册</a>
+                </div>
+               
+                <div class="right-box">
+                       <a  href="">
+                           <i class="iconfont icon-sum"></i>我的账户
+                       </a> 
+                       <p>|</p>
+                       <a href="">
+                           <i class="iconfont icon-gouwucheman1"></i> 购物车
+                       </a>
+
+                       <div class="phone">
+                            <span class="iconfont icon-dianhua1"></span>4006260228
+                       </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="header-wrap">
+            <a class="logo" href=""></a>
+            <a class="banggon" href=""><img src="img/new.gif" alt=""></a>
+            <div class="header-search">
+                <div class="search-box">
+                    <input placeholder="GPW限量粉" type="text" id="txtKeyName" autocomplete="off" >  
+                    <div class="search-right">
+                        <a class="iconfont icon-sousuo1" href=""></a>
+                    </div>
+                   
+                </div>
+                <p class="meat">
+                    热门搜索：
+                    <a href="/Product/Detail?id=5703" target="_blank">G502无线游戏鼠标</a>
+                    <a href="/Product/Detail?id=4307" target="_blank">G633游戏耳机</a>
+                    <a href="/Product/Detail?id=1642" target="_blank">Pro C920摄像头</a>
+                </p>
+
+            </div>
+
+            <a class="xinren" href=""><img src="img/shiping.gif" alt=""></a>
+        </div>
+    </header>
+
+    <!-- nav -->
+    <nav class="nav-box">
+        <div class="nav-wrap">
+            <ul class="nav-txt">
+                <li class="classify" style="display: block; z-index: 999;">
+                    <a class="ify-a" href="">全部产品分类</a>
+                    <div class="classify-nav " style="z-index: 1" >
+                        <dl>
+                            <dt>
+                                <a href="">
+                                    <i class="iconfont icon-erji2"></i> 音乐类
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href="/Product/Index/26" target="_blank">蓝牙音箱</a>
+                                <a href="/Product/Index/25" target="_blank">入耳式耳机</a>
+                            </dd>
+
+                            <dt>
+                                <a href="">
+                                    <i class="iconfont icon-pad"></i> 平板电脑周边
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href="/Product/Index/26" target="_blank">平板电脑周边</a>
+                            </dd>
+
+                            <dt>
+                                <a href="">
+                                    <i class="iconfont icon-youxi"></i> 游戏类
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href="/Product/Index/26" target="_blank">游戏鼠标</a>
+                                <a href="/Product/Index/25" target="_blank">游戏鼠标垫</a>
+                                <a href="/Product/Index/26" target="_blank">游戏耳机麦克风</a>
+                                <a href="/Product/Index/25" target="_blank">方向盘</a>
+                                <a href="/Product/Index/26" target="_blank">罗技G飞行模拟器</a>
+                                <a href="/Product/Index/25" target="_blank">游戏键盘</a>
+                            </dd>
+
+                            <dt>
+                                <a href="">
+                                    <i class="iconfont icon-icon-test"></i> 个人电脑周边
+                                </a>
+                            </dt>
+                            <dd class="clear_border">
+                                <a href="/Product/Index/26" target="_blank">电脑耳机麦克风</a>
+                                <a href="/Product/Index/25" target="_blank">有线键盘</a>
+                                <a href="/Product/Index/26" target="_blank">摄像头</a>
+                                <a href="/Product/Index/25" target="_blank">无线鼠标套装</a>
+                                <a href="/Product/Index/26" target="_blank">演示器</a>
+                                <a href="/Product/Index/25" target="_blank">有线键鼠套装</a>
+                                <a href="/Product/Index/26" target="_blank">蓝牙鼠标垫</a>
+                                <a href="/Product/Index/25" target="_blank">激光鼠标</a>
+                                <a href="/Product/Index/26" target="_blank">无线鼠标</a>
+                                <a href="/Product/Index/25" target="_blank">有线键鼠套装</a>
+                                <a href="/Product/Index/26" target="_blank">有线鼠标</a>
+                                <a href="/Product/Index/25" target="_blank">无线键盘</a>
+                            </dd>
+
+                        </dl>
+                    </div>
+                </li>
+
+                <li class="nav-li">
+                    <a class="first-a" href="">配件专区</a>
+                </li>
+                <li class="nav-li">
+                    <a class="first-a" href="">新品专区</a>
+                </li>
+                <li class="nav-li">
+                    <a class="first-a" href="">会议专区</a>
+                    <em class="hot-bg"></em>
+                </li>
+                <li class="nav-li">
+                    <a class="first-a" href="">礼品采购</a>
+                    <em class="hot-bg"></em>
+                </li>
+                <li class="nav-li">
+                    <a class="first-a" href="">会员福利</a>
+                </li>
+                <li class="nav-li">
+                    <a class="first-a" href="">关于罗技</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 商品详情 -->
+    <aside class="detail-goods-box"> 
+        <div class="detail-goods">
+            <div class="goods-img-box">
+                <div class="big-img">
+                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-01.png" alt="">
+                    <span></span>
+                </div>
+                <div class="bigger-img" style="display: none;">
+                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-01.png" alt="">
+                </div>
+                <ul class="small-img-list">
+                    <li class="">
+                        <img width="59" height="58" bimg="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-01.png" src="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-01.png"  alt="罗技 WONDERBOOM无线蓝牙音箱 牛油果绿">
+                    </li>
+                    <li class="">
+                        <img width="59" height="58" bimg="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-02.png" src="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-02.png" onerror="javascript:this.src='/images/picerror.jpg';" alt="罗技 WONDERBOOM无线蓝牙音箱 牛油果绿">
+                    </li>
+                    <li class="">
+                        <img width="59" height="58" bimg="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-03.png" src="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-03.png" onerror="javascript:this.src='/images/picerror.jpg';" alt="罗技 WONDERBOOM无线蓝牙音箱 牛油果绿">
+                    </li>
+                    <li class="">
+                        <img width="59" height="58" bimg="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-04.png" src="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-04.png" onerror="javascript:this.src='/images/picerror.jpg';" alt="罗技 WONDERBOOM无线蓝牙音箱 牛油果绿">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="goods-text-box">
+                <h2 class="product-title">罗技 WONDERBOOM无线蓝牙音箱 牛油果绿</h2>
+                <p class="product-detail-p">IPX7级防水</p>
+                <div class="product-info-box">
+                    <p class="p1">
+                        <label class="label-text">官&nbsp;方&nbsp;价：</label>
+                        <span class="sale-super-price">￥799.00</span>
+                    </p>
+                    <p class="p1">
+                        <label class="label-text">商&nbsp;城&nbsp;价：</label>
+                        <span class="sale-price" id="spLimiPrice">&nbsp;￥799.00</span>
+                    </p>
+                    <p class="ewm">
+                        <img src="img/icon-ewm.png" alt="">
+                    </p>
+                </div>
+                <div class="check-box">
+                    <div class="check-color-box">
+                        <label class="label-text">可选型号：</label>
+                        <ul class="check-color-list">
+                            <li class="active">
+                                <a id="191" href="" title="牛油果绿">
+                                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2018-10-24/NEW_XM/junlv.jpg" alt="牛油果绿">
+                                </a>
+                            </li>
+                            <li class="">
+                                <a id="192" href="/pro/proDetail/5263" title="混凝土黑">
+                                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2018-10-24/NEW_XM/heihui.jpg" alt="混凝土黑">
+                                </a>
+                            </li>
+                            <li class="">
+                                <a id="193" href="/pro/proDetail/5262" title="幻彩独角兽">
+                                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2018-10-24/NEW_XM/micai.jpg" alt="幻彩独角兽">
+                                </a>
+                            </li>
+                            <li class="">
+                                <a id="194" href="/pro/proDetail/5261" title="覆盆子红">
+                                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2018-10-24/NEW_XM/meihong.jpg" alt="覆盆子红">
+                                </a>
+                            </li>
+                            <li class="">
+                                <a id="195" href="/pro/proDetail/5260" title="补丁牛仔蓝">
+                                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2018-10-24/NEW_XM/niuzai.jpg" alt="补丁牛仔蓝">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="buy-box">
+                        <p class="label-text">购买数量：</p>
+                        <div class="buy-number-box">
+                            <a href="" class="cut-btn" >-</a>
+                            <input value="1" id="txtCount" type="text" >
+                            <a href="" class="add-btn" >+</a>
+                        </div>
+                        <h3 class="sale-number" id="spSold" style="margin-right:5px">
+                            已售<span>34</span>件
+                        </h3>
+                    </div>
+
+                    <div class="buy-btn-box">
+                        <a class="buy-btn1" href="">立即购买</a>
+                        <a class="buy-btn1" href="">加入购物车</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="goods-right-box">
+                <a class="right-img" href="">
+                    <img src="img/new.gif" alt="">
+                </a>
+                <p class="p-title" style="margin-top: 20px;">会员专享：</p>
+                <ul class="liwu-list">
+                    <li>
+                        <img src="img/icon-lwu-01.png" alt="">
+                        <span>会员礼包</span>
+                    </li>
+                    <li>
+                        <img src="img/icon-lwu-02.png" alt="">
+                        <span>会员俱乐部</span>
+                    </li>
+                    <li>
+                        <img src="img/icon-liwu-03.png" alt="">
+                        <span>会员积分</span>
+                    </li>
+                </ul>
+                <p class="p-title">服务承诺：</p>
+                <div class="servers-box">
+                    <label>
+                        <i>
+                            <img src="img/servers-d-01.jpg">
+                        </i>满99包邮
+                    </label>
+                    <label>
+                        <i>
+                            <img src="img/servers-d-02.jpg">
+                        </i>全国联保
+                    </label>
+                    <label>
+                        <i>
+                            <img src="img/servers-d-03.jpg">
+                        </i>闪电发货
+                    </label>
+
+                    <label>
+                        <i>
+                            <img src="img/servers-d-05.jpg">
+                        </i>信用卡支付
+                    </label>
+                    <label style="width:auto">
+                        <i>
+                            <img src="img/servers-d-04.jpg">
+                        </i>7天无理由退货(拆封后不支持)
+                    </label>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+     <!-- index footer -->
+     <footer class="footer-box">
+        <div class="footer-wrap">
+            <div class="footer-s">
+                <span>
+                    <i class="iconfont icon-serviceshandiantuikuan"></i>
+                    快速送货 产品直达
+                </span>
+                <span>
+                    <i class="iconfont icon-gift"></i>
+                    独家优惠 丰富活动
+                </span>
+                <span>
+                    <i class="iconfont icon-zhengpinbz"></i>
+                    官方网购 正品保证
+                </span>
+                <span>
+                    <i class="iconfont icon-meiyuandollars36"></i>
+                    多种类型 方便支付
+                </span>
+                <span>
+                    <i class="iconfont icon-wechat"></i>
+                    所有产品 均有售后
+                </span>
+            </div>
+
+            <div class="cont-box">
+                <dl class="help-dl">
+                    <dt>| &nbsp;新手指南</dt>
+                    <dd><a href="/help/Registered" target="_blank">如何注册</a></dd>
+                    <dd><a href="/help/BuyProcess" target="_blank">购买流程</a></dd>
+                    <dd><a href="/help/Point" target="_blank">积分政策</a></dd>
+                </dl>
+                <dl class="help-dl">
+                    <dt>| &nbsp;支付方式</dt>
+                    <dd><a href="/help/Registered" target="_blank">银行汇款</a></dd>
+                    <dd><a href="/help/BuyProcess" target="_blank">发票问题</a></dd>
+                    <dd><a href="/help/Point" target="_blank">在线支付</a></dd>
+                </dl>
+                <dl class="help-dl">
+                    <dt>| &nbsp;配送方式</dt>
+                    <dd><a href="/help/Registered" target="_blank">配送范围及运费</a></dd>
+                    <dd><a href="/help/BuyProcess" target="_blank">圆通配送</a></dd>
+                </dl>
+                <dl class="help-dl">
+                    <dt>| &nbsp;售后服务</dt>
+                    <dd><a href="/help/Registered" target="_blank">罗技售后网点</a></dd>
+                    <dd><a href="/help/BuyProcess" target="_blank">售后服务承诺</a></dd>
+                    <dd><a href="/help/Point" target="_blank">退款说明</a></dd>
+                </dl>
+                <dl class="help-dl">
+                    <dt>| &nbsp;罗技官方网站</dt>
+                    <dd><a href="/help/Registered" target="_blank">常见问题</a></dd>
+                    <dd><a href="/help/BuyProcess" target="_blank">技术支持</a></dd>
+                    <dd><a href="/help/Point" target="_blank">交易条款</a></dd>
+                </dl>
+
+                <div class="help-right">
+                    <a href="">
+                        <p class="p1">在线客服</p>
+                    </a>
+                    <p class="p1">4006260228</p>    
+                    <p class="p2">周一至周五: 9:00-18:00</p>
+                </div>
+            </div>
+
+            <div class="footer-x">
+                <div class="container">
+                    <p>罗技官方商城由罗技（中国）科技有限公司授权双齐国际贸易（上海）有限公司负责经营 2016 , all rights reserved</p>
+                    <p>
+                        <a href="https://www.logitech.com.cn/zh-cn" target="_blank">罗技官方网站</a>
+                        <a href="/help/Contact" target="_blank">联系方式</a>
+                        <a href="/help/Privacy" target="_blank">隐私声明</a>
+                        <a href="/help/Agreement" target="_blank">用户服务协议</a>
+                        <a href="https://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">沪ICP备10200262号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    new Magnifier;
+</script>
+
