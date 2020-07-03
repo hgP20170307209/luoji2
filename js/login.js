@@ -22,23 +22,24 @@ $(() => {
         // }
 
         $.ajax({
-            type: "post",
-            url: "./server/login.php",
+            type:"post",
+            url:"./server/login.php",
             dataType: "json",
             data: `phone=${phone}&password=${md5(password).slice(0,15)}`
         }).done(data => {
-            // alert(data.msg);
-            /* 如果 */
+            console.log(data)
             if (data.status == "success") {
 
-                // localStorage.setItem("user_phone", data.phone);
-                // localStorage.setItem("user_word", data.password);
+                localStorage.setItem("user_phone", data.data.phone);
+                localStorage.setItem("user_id", data.data.userId);
 
-                // alert(data.msg);
-                /* 跳转 */
+
+                alert(data.data.msg)
+
+                //跳转
                 location.href = "./index.html"
-            } else {
-                alert(data.msg);
+            }else {
+                alert(data.data.msg)
             }
         })
 

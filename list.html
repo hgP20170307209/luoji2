@@ -6,6 +6,8 @@
     <title>Document</title>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/move.js"></script>
+    <script src="js/list.js"></script>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -85,9 +87,9 @@
             <div class="welcome-box">
                 <div class="welcome-div">
                     <span> 您好,欢迎来到罗技官方商城&nbsp;&nbsp;&nbsp;</span>
-                    <a href="">请登录</a>
-                    <i>&nbsp; |  &nbsp;</i>
-                    <a href="">注册</a>
+                    <a class="userInfo" href="javascript:void(0)"></a>
+                   
+                    <a class="status"  href="javascript:void(0)"></a>
                 </div>
                
                 <div class="right-box">
@@ -95,7 +97,7 @@
                            <i class="iconfont icon-sum"></i>我的账户
                        </a> 
                        <p>|</p>
-                       <a href="">
+                       <a href="gwc.html">
                            <i class="iconfont icon-gouwucheman1"></i> 购物车
                        </a>
 
@@ -107,7 +109,7 @@
         </aside>
 
         <div class="header-wrap">
-            <a class="logo" href=""></a>
+            <a class="logo" href="index.html"></a>
             <a class="banggon" href=""><img src="img/new.gif" alt=""></a>
             <div class="header-search">
                 <div class="search-box">
@@ -233,7 +235,7 @@
             </div>
         </aside>
 
-        <div class="container">
+        <div class="container clear_fix">
             <div class="contlist-box">
                 <div class="contlist-left">
                     <h3 class="list-tit">
@@ -317,9 +319,9 @@
 
                     <div class="sort-box">
                         <div class="sort-left">
-                            <a class="sort-a">默认</a>
-                            <a class="sort-a" >销量<i class="iconfont icon-shangxia"></i></a>
-                            <a class="sort-a" >价格<i class="iconfont icon-shangxia"></i></a>
+                            <a class="sort-a cur" data-sort="default" >默认</a>
+                            <a class="sort-a" data-sort="price_asc" >价格<i class="iconfont icon-upper"></i></a>
+                            <a class="sort-a" data-sort="price_desc">价格<i class="iconfont icon-lower"></i></a>
                             <span class="have-goods">
                                 <label for="">
                                     <input type="checkbox" id=""> 不显示售完商品
@@ -363,24 +365,23 @@
                 
                     <div class="page-btn">
                         <ul class="page-btn-box">
-                            <li class="disabled">
+                            <!-- <li class="page-li disabled">
                                 <a href="">第一页</a>
+                            </li> -->
+                            <li class="page-li " id="prevPage">
+                                <a href="javascript:void(0)" aria-label="Previous">
+                                    <span aria-hidden="true">上一页</span>
+                                </a>
                             </li>
-                            <li class="disabled">
-                                <a href="">上一页</a>
+                            
+                            <li class="page-li" id="nextPage">
+                                <a href="javascript:void(0)"  aria-label="Next">
+                                    <span aria-hidden="true">下一页</span>
+                                </a>
                             </li>
-                            <li class="active active-2">
-                                <a href="">1</a>
-                            </li>
-                            <li class="active">
-                                <a href="">2</a>
-                            </li>
-                            <li class="disabled">
-                                <a href="">第一页</a>
-                            </li>
-                            <li class="disabled">
-                                <a href="">上一页</a>
-                            </li>
+                            <!-- <li class="page-li" id="nextPage">
+                                <a href="">最后一页</a>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -455,7 +456,7 @@
             </div>
 
             <div class="footer-x">
-                <div class="container footer">
+                <div class="foo-box footer">
                     <p>罗技官方商城由罗技（中国）科技有限公司授权双齐国际贸易（上海）有限公司负责经营 2016 , all rights reserved</p>
                     <p>
                         <a href="https://www.logitech.com.cn/zh-cn" target="_blank">罗技官方网站</a>
@@ -471,37 +472,38 @@
 </body>
 </html>
 <script>
-    window.onload = function(){
-        let oUl = document.querySelector(".page-box")
-        $.getJSON("server/data.json",(data) => {
-            let html = data.map(item => {
-                return `
-            <li class="page-list">
-                <p class="list-img">
-                    <a href="" target="_blank">
-                        <img src=${item.src} alt="罗技 G560 Lightsync PC游戏音箱">
-                    </a>
-                </p>
-                <p class="list-name">
-                    <a href="" title="罗技 G560 Lightsync PC游戏音箱">${item.title}</a>
-                </p>
-                <p class="list-price">
-                    <span class="jiage">
+    // window.onload = function(){
+    //     let oUl = document.querySelector(".page-box")
+    //     $.getJSON("server/data.json",(data) => {
+    //         let html = data.map(item => {
+    //             return `
+    //         <li class="page-list">
+    //             <p class="list-img">
+    //                 <a href="" target="_blank">
+    //                     <img src=${item.src} alt="罗技 G560 Lightsync PC游戏音箱">
+    //                 </a>
+    //             </p>
+    //             <p class="list-name">
+    //                 <a href="" title="罗技 G560 Lightsync PC游戏音箱">${item.title}</a>
+    //             </p>
+    //             <p class="list-price">
+    //                 <span class="jiage">
                         
-                            <strong>
-                                <em>${item.price}</em>
-                            </strong>
-                    </span>
-                    <span class="comment">${item.comment}</span>
-                </p>
-                <p class="list-tool clear_border">
-                    <a class="tool-a" >加入购物车</a>
-                </p>
-            </li>    
+    //                         <strong>
+    //                             商城价
+    //                             <em>￥</em>${item.price}
+    //                         </strong>
+    //                 </span>
+    //                 <span class="comment">${item.comment}</span>
+    //             </p>
+    //             <p class="list-tool clear_border">
+    //                 <a class="tool-a" >加入购物车</a>
+    //             </p>
+    //         </li>    
             
-                `
-            }).join("")
-            oUl.innerHTML = html
-        })
-    }   
+    //             `
+    //         }).join("")
+    //         oUl.innerHTML = html
+    //     })
+    // }   
 </script>

@@ -193,7 +193,7 @@
     /* background-color: greenyellow; */
 }
 .welcome-box .welcome-div{
-    width: 310px;
+    width: 400px;
     height: 35px;
     font-size: 12px;
     color: #8f8f8f;
@@ -434,7 +434,7 @@
     justify-content: center;
     /* background: sandybrown; */
 }
-.footer-x .container{
+.footer-x .foo-box{
     width: 1230px;
     height: 59px;
     display: flex;
@@ -447,12 +447,12 @@
     font-size: 14px;
     margin-bottom: 10px;
 }
-.container p a{
+.foo-box p a{
     color: #7f7f7f;
     margin: 0 3px;
     font-size: 14px;
 }
-.container p a:hover{
+.foo-box p a:hover{
     border-bottom: 1px solid #7f7f7f;
 }
 

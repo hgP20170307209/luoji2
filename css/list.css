@@ -18,7 +18,7 @@
 }
 .container{
     width: 1519px;
-    height: 1870px;
+    min-height: 1870px;
     background: #f4f4f4;
     padding-top: 15px;
 }
@@ -245,7 +245,7 @@
 #divpage{
     margin-top: 15px;
     width: 970px;
-    height: 1548px;
+    min-height: 1548px;
 }
 #divpage .page-box{
     width: 970px;
@@ -367,7 +367,7 @@
 .page-btn .page-btn-box a{
     color: #000;
 }
-.page-btn .page-btn-box .disabled{
+.page-btn .page-btn-box .page-li{
     width: 60px;
     height: 30px;
     background: #fff;
@@ -375,7 +375,9 @@
     text-align: center;
     line-height: 30px;
 }
-
+.disabled {
+    pointer-events: none;
+}
 .page-btn .page-btn-box .active{
     width: 30px;
     height: 30px;

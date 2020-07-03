@@ -97,6 +97,13 @@
       "unicode_decimal": 58918
     },
     {
+      "icon_id": "730813",
+      "name": "下",
+      "font_class": "icon-arrow-btm4",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
       "icon_id": "749868",
       "name": "正品保障",
       "font_class": "zhengpinbz",
@@ -209,6 +216,13 @@
       "unicode_decimal": 58914
     },
     {
+      "icon_id": "5203280",
+      "name": "上",
+      "font_class": "shang",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
       "icon_id": "5387609",
       "name": "上下展开",
       "font_class": "shangxiazhankai",
@@ -237,6 +251,20 @@
       "unicode_decimal": 58992
     },
     {
+      "icon_id": "6057744",
+      "name": "上",
+      "font_class": "upper",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "6057771",
+      "name": "下",
+      "font_class": "lower",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
       "icon_id": "6561240",
       "name": "咨询",
       "font_class": "zixun1",
@@ -261,15 +289,15 @@
       "icon_id": "8371505",
       "name": "back top",
       "font_class": "backtop",
-      "unicode": "e617",
-      "unicode_decimal": 58903
+      "unicode": "e619",
+      "unicode_decimal": 58905
     },
     {
       "icon_id": "11493434",
       "name": "搜索",
       "font_class": "sousuo1",
-      "unicode": "e618",
-      "unicode_decimal": 58904
+      "unicode": "e61a",
+      "unicode_decimal": 58906
     },
     {
       "icon_id": "12670569",
@@ -289,8 +317,8 @@
       "icon_id": "14055582",
       "name": "微信",
       "font_class": "weixin1",
-      "unicode": "e61a",
-      "unicode_decimal": 58906
+      "unicode": "e61b",
+      "unicode_decimal": 58907
     },
     {
       "icon_id": "15001662",

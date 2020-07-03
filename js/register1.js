@@ -58,7 +58,7 @@ $(() => {
     }
     $(".from-group-ul input").blur(function() {
         let option_id = this.id;
-        console.log("option_id", options[option_id]);
+        // console.log("option_id", options[option_id]);
 
         let val = $.trim($(this).val());
 
@@ -73,7 +73,7 @@ $(() => {
 
     // (4) 注册功能(获取参数并且发送网络请求， 在服务器端进行处理)
     $("#registerBtn").click(function() {
-        console.log("!!!!!")
+        // console.log("!!!!!")
         /* [1] 检查表单验证是否全部都通过，如果有一个没有通过那么就return  */
         $("#phoneID,#passwordA,#passwordB,#imageCode").trigger("blur");
 
@@ -91,6 +91,8 @@ $(() => {
             phone: $.trim($("#phoneID").val()),
             password: md5($.trim($("#passwordA").val())).slice(0, 15)
         }
+        // console.log(data);
+        
 
         /* [3] 发送网络请求去执行注册 */
         $.ajax({
