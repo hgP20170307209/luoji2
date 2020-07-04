@@ -43,12 +43,12 @@ $(() => {
                 return `
                     <li class="page-list" data-id=${item.good_id}>
                     <p class="list-img">
-                        <a href="" target="_blank">
+                        <a href="detail.html?id=${item.good_id}" target="_blank">
                             <img src=${item.src} alt="罗技 G560 Lightsync PC游戏音箱">
                         </a>
                     </p>
                     <p class="list-name">
-                        <a href="" title="罗技 G560 Lightsync PC游戏音箱">${item.title}</a>
+                        <a href="detail.html" title="罗技 G560 Lightsync PC游戏音箱">${item.title}</a>
                     </p>
                     <p class="list-price">
                         <span class="jiage">
@@ -71,6 +71,9 @@ $(() => {
         })
     }
 
+  
+
+
     // 加入购物车的点击事件
     $(".page-box").on("click",".tool-a",function() {
         // console.log("++")
@@ -78,7 +81,9 @@ $(() => {
         let phone = localStorage.getItem("user_phone") || "";
         let good_id = $(this).parent().parent().attr("data-id")
 
+
         // console.log(user_id, phone);
+
         if(user_id && phone){
             
             $.ajax({

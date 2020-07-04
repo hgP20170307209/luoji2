@@ -23,7 +23,8 @@ if($num == 1){
     "(NULL,'$password','2020-07-01',$phone)";
 
   $retval = mysqli_query($db, $sql);
-  echo $retval;
+  // echo $retval;
+  
   if (!$retval) {
     die('无法插入数据: ' . mysqli_error($conn));
   }
